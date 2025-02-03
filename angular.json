@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "pnpm"
+    "packageManager": "pnpm",
+    "analytics": false
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -128,7 +129,10 @@
               "hmr": true
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4203
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -139,6 +143,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "port": 4203,
             "polyfills": [
               "zone.js",
               "zone.js/testing"

@@ -20,7 +20,7 @@ npm start
 After a short while you see something like this:
 
 ```
-** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+** Angular Live Development Server is listening on localhost:4203, open your browser on http://localhost:4203/ **
 ```
 
 If you have ollama and running you can click on the displayed link or type it into the browser.
